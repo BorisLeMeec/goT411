@@ -22,7 +22,7 @@ func getClient() (out *Client) {
 }
 
 //Auth return nil if connection with t411 is ok, or error if not
-func (*Client) Auth() error {
+func (c Client) Auth() error {
 
 	return nil
 }
