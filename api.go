@@ -49,7 +49,7 @@ func (c Client) requestURI(uri string) (string, error) {
 	// }
 	// fmt.Printf("%s\n", str)
 	if resp.StatusCode != 200 { //OK
-		return "", errors.New("Request send error code " + strconv.Itoa(resp.StatusCode))
+		return "", errors.New("Request sent error code " + strconv.Itoa(resp.StatusCode))
 	}
 	bodyBytes, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
